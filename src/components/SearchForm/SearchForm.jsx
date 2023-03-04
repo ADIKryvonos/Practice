@@ -9,7 +9,7 @@ export class SearchForm extends Component {
   };
 
   onChange = e => {
-    this.setState({ input: e.target.value });
+    this.setState({ input: e.target.value.toLowerCase().trim() });
   };
 
   onSubmit = e => {
