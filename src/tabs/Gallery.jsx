@@ -51,6 +51,7 @@ export class Gallery extends Component {
       this.setState({ error: error.message });
     }
   };
+
   loadMore = () => {
     this.setState(({ page }) => ({
       page: page + 1,
